@@ -11,8 +11,8 @@
 <meta name="author" content="IntellSoft — اینتل‌سافت">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#071a2e">
-<!-- 🔧 بعد از انتشار در گیت‌هاب، YOUR-USERNAME را با نام کاربری خود جایگزین کنید -->
-<link rel="canonical" href="https://YOUR-USERNAME.github.io/mobileyab/">
+<!-- 🔧 بعد از انتشار در گیت‌هاب، intellsoft را با نام کاربری خود جایگزین کنید -->
+<link rel="canonical" href="https://intellsoft.github.io/mobileyab/">
 
 <!-- ═══════════ شبکه‌های اجتماعی ═══════════ -->
 <meta property="og:type" content="website">
@@ -45,7 +45,7 @@
     "price": "4990000",
     "priceCurrency": "IRR",
     "availability": "https://schema.org/InStock",
-    "url": "https://YOUR-USERNAME.github.io/mobileyab/"
+    "url": "https://intellsoft.github.io/mobileyab/"
   },
   "author": { "@type": "Organization", "name": "اینتل‌سافت", "alternateName": "IntellSoft" },
   "contactPoint": { "@type": "ContactPoint", "telephone": "+98-937-007-1083", "contactType": "sales" }
@@ -58,6 +58,7 @@
   "mainEntity": [
     {"@type":"Question","name":"موبایل‌یاب ایران روی چه سیستم‌عاملی اجرا می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"روی ویندوز ۱۰ و ۱۱ اجرا می‌شود. فایل به‌همراه راهنمای نصب کامل تحویل داده می‌شود و فقط به یک اینترنت معمولی نیاز دارد."}},
     {"@type":"Question","name":"شماره‌ها از کجا می‌آیند؟","acceptedAnswer":{"@type":"Answer","text":"برنامه فقط شماره‌هایی را پیدا می‌کند که خود وب‌سایت‌ها به‌صورت عمومی منتشر کرده‌اند؛ هیچ داده خصوصی جمع‌آوری نمی‌شود."}},
+    {"@type":"Question","name":"آیا موبایل‌یاب ایران روی دیوار و شیپور کار می‌کند؟","acceptedAnswer":{"@type":"Answer","text":"خیر. سایت‌های دیوار و شیپور محتوا را با جاوااسکریپت بارگذاری می‌کنند و سیستم ضدربات دارند؛ بنابراین این نرم‌افزار روی آن‌ها کار نمی‌کند. این ابزار برای سایت‌هایی مناسب است که شماره تماس را به‌صورت عمومی در صفحات HTML منتشر می‌کنند؛ مانند سایت‌های شرکتی، فروشگاه‌های اینترنتی و صفحات تماس با ما."}},
     {"@type":"Question","name":"آیا برای آپدیت‌ها باید هزینه کنم؟","acceptedAnswer":{"@type":"Answer","text":"خیر. قیمت ۴۹۹ هزار تومان یک‌بار پرداخت است و همه آپدیت‌های آینده رایگان ارائه می‌شود."}},
     {"@type":"Question","name":"فایل خریداری‌شده چطور تحویل داده می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"بلافاصله بعد از پرداخت، فایل نرم‌افزار از طریق پیام‌رسان بله یا تلگرام برایتان ارسال می‌شود."}},
     {"@type":"Question","name":"آیا محدودیت تعداد استخراج دارد؟","acceptedAnswer":{"@type":"Answer","text":"خیر؛ بدون اشتراک و بدون محدودیت، هرچقدر بخواهید می‌توانید اسکن و خروجی بگیرید."}}
@@ -250,6 +251,22 @@ h2{font-family:var(--display);font-weight:400;font-size:clamp(1.9rem,3.6vw,2.7re
 .step:hover .step-num{transform:translateY(-7px) rotate(-4deg)}
 .step h3{font-size:1.2rem;font-weight:800;margin-bottom:.4rem}
 .step p{color:var(--muted);font-size:.95rem;max-width:17rem;margin:auto;line-height:2}
+
+/* ═══════════════════ نکته مهم قبل از خرید ═══════════════════ */
+.notice-sec{background:var(--paper);padding:3.5rem 0}
+.notice-box{max-width:920px;margin:auto;padding:2.1rem 2.3rem;
+  background:linear-gradient(135deg,#fffaf0,#fff4dd);
+  border:1px solid #ffe1a0;border-inline-start:6px solid var(--amber);
+  border-radius:18px;display:flex;gap:1.5rem;align-items:flex-start;
+  box-shadow:0 14px 36px rgba(255,180,84,.13)}
+.notice-ic{font-size:2.4rem;flex-shrink:0;line-height:1.3}
+.notice-body h3{font-family:var(--display);font-weight:400;font-size:1.55rem;color:#9a6300;margin-bottom:.7rem}
+.notice-body p{color:#6b5420;line-height:2.05;font-size:.98rem;margin-bottom:.6rem}
+.notice-body p:last-child{margin-bottom:0}
+.notice-body b{color:#3d2e00;font-weight:800}
+.notice-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
+.notice-tag{background:rgba(18,183,106,.1);border:1px solid rgba(18,183,106,.35);color:#0c7a49;padding:.3rem .9rem;border-radius:999px;font-size:.82rem;font-weight:700}
+@media(max-width:980px){.notice-sec{padding:3rem 1.4rem}.notice-box{flex-direction:column;gap:.8rem;padding:1.6rem}}
 
 /* ═══════════════════ قیمت و خرید ═══════════════════ */
 .price{position:relative;overflow:hidden;color:var(--htext);padding:6rem 0;
@@ -508,6 +525,25 @@ footer{background:#050f1c;color:#8fa3b8;padding:3.6rem 0 6.5rem}
   </div>
 </section>
 
+<!-- ═══════════ نکته مهم قبل از خرید ═══════════ -->
+<section class="notice-sec">
+  <div class="notice-box reveal">
+    <div class="notice-ic">⚠️</div>
+    <div class="notice-body">
+      <h3>نکته مهم قبل از خرید</h3>
+      <p>موبایل‌یاب ایران روی سایت‌های <b>دیوار</b> و <b>شیپور</b> کار <b>نمی‌کند</b>؛ زیرا این سایت‌ها اطلاعات را با جاوااسکریپت بارگذاری می‌کنند و از سیستم‌های ضدربات پیشرفته استفاده می‌کنند.</p>
+      <p>این نرم‌افزار برای سایت‌هایی طراحی شده که شماره تماس را به‌صورت عمومی در صفحات خود منتشر می‌کنند؛ از جمله:</p>
+      <div class="notice-tags">
+        <span class="notice-tag">سایت‌های شرکتی و تجاری</span>
+        <span class="notice-tag">فروشگاه‌های اینترنتی</span>
+        <span class="notice-tag">سایت‌های خدماتی</span>
+        <span class="notice-tag">بانک اطلاعات مشاغل</span>
+        <span class="notice-tag">صفحات «تماس با ما»</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════ قیمت و خرید ═══════════ -->
 <section class="price" id="price">
   <div class="price-grid">
@@ -564,6 +600,10 @@ footer{background:#050f1c;color:#8fa3b8;padding:3.6rem 0 6.5rem}
     <div class="qa reveal">
       <button class="qa-q">شماره‌ها از کجا می‌آیند؟<span class="pm">+</span></button>
       <div class="qa-a"><p>برنامه فقط شماره‌هایی را پیدا می‌کند که خودِ وب‌سایت‌ها به‌صورت عمومی منتشر کرده‌اند؛ هیچ دادهٔ خصوصی هک یا جمع‌آوری نمی‌شود.</p></div>
+    </div>
+    <div class="qa reveal">
+      <button class="qa-q">آیا روی دیوار و شیپور کار می‌کند؟<span class="pm">+</span></button>
+      <div class="qa-a"><p>خیر. سایت‌های دیوار و شیپور محتوای خود را با جاوااسکریپت بارگذاری می‌کنند و از سیستم‌های ضدربات پیشرفته استفاده می‌کنند؛ به همین دلیل این نرم‌افزار روی آن‌ها کار نمی‌کند. موبایل‌یاب ایران برای سایت‌هایی طراحی شده که شماره تماس را به‌صورت عمومی و مستقیم در صفحات HTML خود منتشر می‌کنند؛ مانند سایت‌های شرکتی، فروشگاه‌های اینترنتی، سایت‌های خدماتی و صفحات «تماس با ما».</p></div>
     </div>
     <div class="qa reveal">
       <button class="qa-q">آیا برای آپدیت‌ها باید هزینه کنم؟<span class="pm">+</span></button>
